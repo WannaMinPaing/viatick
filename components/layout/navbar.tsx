@@ -15,9 +15,7 @@ const Navbar = () =>{
                 className="w-[200px] h-[50px] ml-[20px]"
             />
             <NavbarLinkContainer />
-            <div>
             <DarkModeToggle />
-            </div>
         </div> 
     )
 }
