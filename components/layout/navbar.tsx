@@ -6,7 +6,7 @@ import DarkModeToggle from "../DarkModeToggle";
 
 const Navbar = () =>{
     return (  
-        <div className="flex justify-between items-center bg-secondary dark:bg-dark py-[14px] mx-[80px] border-[1px] border-primary/90 mt-[20px] rounded-[10px]">
+        <div className="flex justify-between items-center bg-secondary dark:bg-dark py-[14px] mb-[10px] mx-[80px] border-[1px] border-primary/90 mt-[20px] rounded-[10px]">
             
             <Image
                 alt="Viatick"
