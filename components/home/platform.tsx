@@ -43,18 +43,17 @@ const Platform = () => {
                 </button>
                 
                 <motion.div
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: showFeatures ? 1 : 0, height: showFeatures ? "auto" : 0 }}
-                    transition={{ duration: 0.3 }}
+                    initial={{ opacity: 0, maxHeight: 0 }}
+                    animate={{ opacity: showFeatures ? 1 : 0, maxHeight: showFeatures ? 500 : 0 }}
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                    className="overflow-hidden"
                 >
-                    {showFeatures && (
-                        <ul className="grid grid-cols-4 mt-[10px] gap-2 overflow-hidden mb-[10px]">
-                            <PlatformItem title="Industry-Specific Templates" description="JARVIS provides pre-designed templates tailored to various industries, streamlining processes and addressing specific needs efficiently." />
-                            <PlatformItem title="Versatile Views" description="Our platform offers customizable views to accommodate different workflows and preferences, ensuring ease of use across diverse sectors." />
-                            <PlatformItem title="Hardware Options" description="Choose from a range of hardware options that have been rigorously tested and proven effective across multiple deployments, ensuring reliability and performance." />
-                            <PlatformItem title="Cloud-Based Reporting and Analysis" description="JARVIS enables real-time reporting and analysis on the cloud, allowing for informed decision-making and agile responses to market dynamics." />
-                        </ul>
-                    )}
+                    <ul className="grid grid-cols-4 mt-[10px] gap-2 mb-[10px]">
+                        <PlatformItem title="Industry-Specific Templates" description="JARVIS provides pre-designed templates tailored to various industries, streamlining processes and addressing specific needs efficiently." />
+                        <PlatformItem title="Versatile Views" description="Our platform offers customizable views to accommodate different workflows and preferences, ensuring ease of use across diverse sectors." />
+                        <PlatformItem title="Hardware Options" description="Choose from a range of hardware options that have been rigorously tested and proven effective across multiple deployments, ensuring reliability and performance." />
+                        <PlatformItem title="Cloud-Based Reporting and Analysis" description="JARVIS enables real-time reporting and analysis on the cloud, allowing for informed decision-making and agile responses to market dynamics." />
+                    </ul>
                 </motion.div>
             </div>
 
@@ -65,20 +64,18 @@ const Platform = () => {
                 </button>
                 
                 <motion.div
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: showBenefits ? 1 : 0, height: showBenefits ? "auto" : 0 }}
-                    transition={{ duration: 0.3 }}
-                >
-                    {showBenefits && (
-                        <ul className="grid grid-cols-4 mt-[10px] gap-2 overflow-hidden mb-[10px]">
-                            <PlatformItem title="Enhanced Efficiency" description="By leveraging industry-specific templates and intuitive views, organizations can optimize workflows and boost productivity." />
-                            <PlatformItem title="Versatile Views" description="Our platform offers customizable views to accommodate different workflows and preferences, ensuring ease of use across diverse sectors." />
-                            <PlatformItem title="Scalability" description=" JARVIS offers scalable solutions that can grow with your business, adapting to evolving requirements and expanding operations seamlessly." />
-                            <PlatformItem title="Reliability" description="With proven hardware options and robust deployment strategies, our platform ensures reliability and stability in mission-critical environments." />
-                            <PlatformItem title="Insightful Analytics" description="With proven hardware options and robust deployment strategies, our platform ensures reliability and stability in mission-critical environments.." />
-
-                        </ul>
-                    )}
+                    initial={{ opacity: 0, maxHeight: 0 }}
+                    animate={{ opacity: showBenefits ? 1 : 0, maxHeight: showBenefits ? 500 : 0 }}
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                    className="overflow-hidden"
+                >   
+                    <ul className="grid grid-cols-4 mt-[10px] gap-2 mb-[10px]">
+                        <PlatformItem title="Enhanced Efficiency" description="By leveraging industry-specific templates and intuitive views, organizations can optimize workflows and boost productivity." />
+                        <PlatformItem title="Versatile Views" description="Our platform offers customizable views to accommodate different workflows and preferences, ensuring ease of use across diverse sectors." />
+                        <PlatformItem title="Scalability" description=" JARVIS offers scalable solutions that can grow with your business, adapting to evolving requirements and expanding operations seamlessly." />
+                        <PlatformItem title="Reliability" description="With proven hardware options and robust deployment strategies, our platform ensures reliability and stability in mission-critical environments." />
+                        <PlatformItem title="Insightful Analytics" description="With proven hardware options and robust deployment strategies, our platform ensures reliability and stability in mission-critical environments.." />
+                    </ul> 
                 </motion.div>
             </div>
 
@@ -89,15 +86,14 @@ const Platform = () => {
                 </button>
                 
                 <motion.div
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: showConclusion ? 1 : 0, height: showConclusion ? "auto" : 0 }}
-                    transition={{ duration: 0.3 }}
+                    initial={{ opacity: 0, maxHeight: 0 }}
+                    animate={{ opacity: showConclusion ? 1 : 0, maxHeight: showConclusion ? 500 : 0 }}
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                    className="overflow-hidden"
                 >
-                    {showConclusion && (
-                        <ul className="grid grid-cols-1 mt-[10px] gap-2 overflow-hidden mb-[10px]">
-                            <PlatformItem title="" description="JARVIS empowers organizations across diverse industries with its versatile templates, customizable views, and reliable hardware options. By harnessing the power of cloud-based reporting and analysis, our platform equips businesses with the tools they need to thrive in today’s dynamic marketplace." />
-                        </ul>
-                    )}
+                    <ul className="grid grid-cols-1 mt-[10px] gap-2  mb-[10px]">
+                        <PlatformItem title="" description="JARVIS empowers organizations across diverse industries with its versatile templates, customizable views, and reliable hardware options. By harnessing the power of cloud-based reporting and analysis, our platform equips businesses with the tools they need to thrive in today’s dynamic marketplace." />
+                    </ul>
                 </motion.div>
             </div>
         </div>
