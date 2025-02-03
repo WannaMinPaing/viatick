@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 export default {
+  darkMode: "class", 
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -37,6 +38,20 @@ export default {
           '900': '#3d3d3d',
           '950': '#292929',
         },
+        dark:{
+          DEFAULT: '#000000',
+          '50': '#f6f6f6',
+          '100': '#e7e7e7',
+          '200': '#d1d1d1',
+          '300': '#b0b0b0',
+          '400': '#888888',
+          '500': '#6d6d6d',
+          '600': '#5d5d5d',
+          '700': '#4f4f4f',
+          '800': '#454545',
+          '900': '#454545',
+          '950': '#000000',
+        }
       },
       backgroundImage : {
         'slide-tab-background-color':

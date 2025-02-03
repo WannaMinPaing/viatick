@@ -36,7 +36,7 @@ const SlideTabs = () => {
                     opacity: 0,
                 }));
             }}
-            className="relative mx-auto flex w-fit   bg-white p-1 justify-center items-center"
+            className="relative mx-auto flex w-fit   bg-white dark:bg-dark p-1 justify-center items-center"
         >
             {navbarlinks.map((link, index) => (
                 <Tab key={index} setPosition={setPosition}>{link.text}</Tab>
@@ -56,7 +56,7 @@ const Tab = ({ children, setPosition }: TabProps) => {
                 const { width } = ref.current.getBoundingClientRect();
                 setPosition({ width, opacity: 1, left: ref.current.offsetLeft });
             }}
-            className="relative z-10 block cursor-pointer px-3 py-1.5 text-xs  mix-blend-difference md:px-5 md:py-3 md:text-base"
+            className="relative z-10 block cursor-pointer px-3 py-1.5 text-xs  mix-blend-difference md:px-5 md:py-3 md:text-base font-bold"
         >
             {children}
         </li>
