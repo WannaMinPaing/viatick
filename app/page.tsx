@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <WelcomeBlog/>
-      <div className="background-grid dark:background-grid-dark mx-[100px] h-full">
+      <div className="background-grid dark:background-grid-dark mx-[100px] max-lg:mx-[50px] max-sm:mx-[15px] h-full">
           <OfferSection />
           <Platform/>
       </div>

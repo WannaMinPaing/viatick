@@ -36,7 +36,7 @@ const OfferSection = () => {
         We Offer Comprehensive Services In Various Industries
       </div>
 
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3  max-lg:grid-cols-2 max-sm:grid-cols-1">
         {offerings.map((offering, index) => (
           <OfferingCard key={index} {...offering} />
         ))}

@@ -12,9 +12,9 @@ const Platform = () => {
 
     return (
         <div className="mt-[100px] mx-[20px]">
-            <div className="flex">
-                <div className="w-1/2">
-                    <h2 className="!mb-3 !text-[.75rem] uppercase leading-[1.35] tracking-[0.02rem] text-primary">
+            <div className="flex max-md:flex-col-reverse">
+                <div className="w-1/2 max-md:w-full max-md:mt-[30px]">
+                    <h2 className="!mb-3 !text-[.75rem] uppercase  leading-[1.35] tracking-[0.02rem] text-primary">
                         Improve your processes with JARVIS
                     </h2>
                     <h3 className="mb-5 font-bold !leading-[1.3] text-primary-500 dark:text-white-200 xl:text-[1.5rem]">
@@ -25,7 +25,7 @@ const Platform = () => {
                     </p>
                 </div>
 
-                <div className="w-1/2 flex justify-center items-center">
+                <div className="w-1/2 max-md:w-full flex justify-center items-center">
                     <Image
                         alt="Viatick"
                         src="/images/platform.jpeg"
@@ -48,7 +48,7 @@ const Platform = () => {
                     transition={{ duration: 1, ease: "easeInOut" }}
                     className="overflow-hidden"
                 >
-                    <ul className="grid grid-cols-4 mt-[10px] gap-2 mb-[10px]">
+                    <ul className="grid grid-cols-4 mt-[10px] gap-2 mb-[10px] max-md:grid-cols-2 max-sm:grid-cols-1">
                         <PlatformItem title="Industry-Specific Templates" description="JARVIS provides pre-designed templates tailored to various industries, streamlining processes and addressing specific needs efficiently." />
                         <PlatformItem title="Versatile Views" description="Our platform offers customizable views to accommodate different workflows and preferences, ensuring ease of use across diverse sectors." />
                         <PlatformItem title="Hardware Options" description="Choose from a range of hardware options that have been rigorously tested and proven effective across multiple deployments, ensuring reliability and performance." />
@@ -69,7 +69,7 @@ const Platform = () => {
                     transition={{ duration: 1, ease: "easeInOut" }}
                     className="overflow-hidden"
                 >   
-                    <ul className="grid grid-cols-4 mt-[10px] gap-2 mb-[10px]">
+                    <ul className="grid grid-cols-4 mt-[10px] gap-2 mb-[10px] max-md:grid-cols-2 max-sm:grid-cols-1">
                         <PlatformItem title="Enhanced Efficiency" description="By leveraging industry-specific templates and intuitive views, organizations can optimize workflows and boost productivity." />
                         <PlatformItem title="Versatile Views" description="Our platform offers customizable views to accommodate different workflows and preferences, ensuring ease of use across diverse sectors." />
                         <PlatformItem title="Scalability" description=" JARVIS offers scalable solutions that can grow with your business, adapting to evolving requirements and expanding operations seamlessly." />
