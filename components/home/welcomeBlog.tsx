@@ -1,11 +1,10 @@
 import { FaCircleArrowRight } from "react-icons/fa6";
 
-const WelcomeBlog = () =>{
+const WelcomeBlog = () => {
     return (
         <div className="relative text-center">
             <video
-                className="absolute top-0 left-0 w-full  object-cover"
-                style={{ height: "calc(100vh - 100px)" }}
+                className="w-full object-cover h-screen max-lg:h-[500px] max-sm:h-[350px]"
                 autoPlay
                 loop
                 muted
@@ -13,7 +12,7 @@ const WelcomeBlog = () =>{
                 <source src="/videos/welcome.mp4" type="video/mp4" />
             </video>
 
-            <div className="relative z-10">
+            <div className="absolute top-0 w-full z-10">
                 <div className="pt-[150px] max-sm:pt-[50px] font-bold text-[20px] text-gradient font-SofiaSans">
                     Revolutionizing business activities with AIoT
                 </div>
@@ -27,8 +26,8 @@ const WelcomeBlog = () =>{
                     <span className="text-[20px] border-[1px] rounded-[25px] border-primary/90 text-gradient font-bold px-[10px] py-[5px] inline-flex items-center gap-2 group hover:italic transition-transform duration-2000 font-SofiaSans">
                         Contact Us
                         <FaCircleArrowRight
-                        size={20}
-                        className="text-primary mx-[5px] group-hover:-rotate-45 transition-transform duration-1000"
+                            size={20}
+                            className="text-primary mx-[5px] group-hover:-rotate-45 transition-transform duration-1000"
                         />
                     </span>
                 </div>
@@ -36,5 +35,6 @@ const WelcomeBlog = () =>{
         </div>
     )
 }
+
 
 export default WelcomeBlog;
