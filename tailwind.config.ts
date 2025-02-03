@@ -38,6 +38,10 @@ export default {
           '950': '#292929',
         },
       },
+      backgroundImage : {
+        'slide-tab-background-color':
+          'linear-gradient(94deg, #2a93d5 10.66%, #30c3a6 53.03%, #85fab0 96.34%, rgba(0, 247, 255, .307) 191.41%, rgba(59, 193, 255, 0) 191.43%)', 
+      },
     },
   },
   plugins: [],

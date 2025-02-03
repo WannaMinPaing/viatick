@@ -1,7 +1,5 @@
 'use client';
 
-import { images } from "@/constants/images";
-import Image from "next/image";
 import { memo } from "react";
 import Navbar from "./navbar";
 
