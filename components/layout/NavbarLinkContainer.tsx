@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { TargetAndTransition } from "framer-motion";
 import { navbarlinks } from "@/data/navbarlinks";
+
 interface PositionType {
     left: number;
     width: number;
@@ -15,7 +16,7 @@ interface TabProps {
 
 export const NavbarLinkContainer = () => {
     return (
-        <div className="grid place-content-center bg-neutral-100">
+        <div className="grid place-content-center max-sm:mt-[20px]">
             <SlideTabs />
         </div>
     );
@@ -36,12 +37,12 @@ const SlideTabs = () => {
                     opacity: 0,
                 }));
             }}
-            className="relative mx-auto flex w-fit   bg-white dark:bg-dark p-1 justify-center items-center"
+            className="relative mx-auto flex w-full sm:w-fit  p-1 justify-center items-center"
         >
             {navbarlinks.map((link, index) => (
                 <Tab key={index} setPosition={setPosition}>{link.text}</Tab>
             ))}
-             <Cursor position={position} />
+            <Cursor position={position} />
         </ul>
     );
 };
@@ -56,7 +57,7 @@ const Tab = ({ children, setPosition }: TabProps) => {
                 const { width } = ref.current.getBoundingClientRect();
                 setPosition({ width, opacity: 1, left: ref.current.offsetLeft });
             }}
-            className="relative z-10 block cursor-pointer px-3 py-1.5 text-xs  mix-blend-difference md:px-5 md:py-3 md:text-base font-bold font-SofiaSans"
+            className="relative z-10 block cursor-pointer px-3 py-1.5 text-xs mix-blend-difference sm:px-5 sm:py-3 sm:text-base font-bold font-SofiaSans"
         >
             {children}
         </li>
@@ -71,4 +72,3 @@ const Cursor = ({ position }: { position: PositionType }) => {
         />
     );
 };
-
