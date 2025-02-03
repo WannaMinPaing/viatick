@@ -67,6 +67,10 @@ export default {
           '950': '#1e2633',
         }
       },
+      fontFamily: {
+        SofiaSans: ['Sofia Sans', 'serif'],
+       },
+   
       backgroundImage : {
         'slide-tab-background-color':
           'linear-gradient(90deg, #12b5de -30%, #08bade 30%, #033d3f 90%)'
