@@ -22,7 +22,7 @@ const Partners = () => {
               exit={{ opacity: 0, x: -20 }}
               transition={{ duration: 0.5 }}
             >
-              <TeamMember name={partner.name}  image={partner.image} />
+              <PartnerCard name={partner.name}  image={partner.image} />
             </motion.div>
           ))}
         </div>
@@ -33,7 +33,7 @@ const Partners = () => {
 
 export default Partners;
 
-const TeamMember = ({ name, image }: { name: string;  image: string }) => {
+const PartnerCard = ({ name, image }: { name: string;  image: string }) => {
   return (
     <motion.div
       className="flex flex-col items-center text-center p-2  transition-shadow duration-300 cursor-pointer"
