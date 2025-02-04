@@ -1,4 +1,3 @@
-import { FaCircleArrowRight } from "react-icons/fa6";
 import ContactUsButton from "../contactUsButton";
 
 const WelcomeBlog = () => {
