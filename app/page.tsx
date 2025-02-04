@@ -1,3 +1,4 @@
+import FrequentlyAskedQuestion from "@/components/home/frequentlyAskedQuestion";
 import Government from "@/components/home/government";
 import OfferSection from "@/components/home/offerSection";
 import Platform from "@/components/home/platform";
@@ -13,6 +14,7 @@ export default function Home() {
           <Platform/>
           <Government />
           <RealEstate />
+          <FrequentlyAskedQuestion/>
       </div>
     </>
   );
