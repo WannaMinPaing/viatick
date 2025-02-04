@@ -76,9 +76,14 @@ const Footer = () => {
       <hr className="mt-[30px] mb-7 text-primary" />
 
       <div className="flex w-full justify-center max-lg:flex-col">
-        <p className="w-1/3 text-nowrap text-center max-lg:w-full max-lg:text-left dark:text-white text-blue mb-7">
-            Copyright © 2014-2024 <span className="text-primary"> Viatick </span>
-        </p>
+        <div className="dark:text-white text-blue mb-7 text-center">
+            <div>Copyright © 2014-2024 <span className="text-primary"> Viatick </span></div>
+            <div className="flex  text-center gap-3 mt-[10px] items-center justify-center">
+                <div className="cursor-pointer">Privacy Policy</div>
+                <div className="cursor-pointer">Terms And Condition</div>
+                <div className="cursor-pointer">Contact Us</div>
+            </div>
+        </div>
       </div>
     </div>
   );
