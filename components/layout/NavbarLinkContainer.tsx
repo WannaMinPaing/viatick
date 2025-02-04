@@ -68,7 +68,7 @@ const Tab = ({ children, setPosition }: TabProps) => {
                 const { width } = ref.current.getBoundingClientRect();
                 setPosition({ width, opacity: 1, left: ref.current.offsetLeft });
             }}
-            className="relative z-10 block cursor-pointer px-3 py-1.5 text-xs mix-blend-difference sm:px-5 sm:py-3 sm:text-base font-bold font-SofiaSans max-sm:text-[17px] max-sm:hover:text-primary"
+            className="relative z-10 block cursor-pointer px-3 py-1.5 text-xs mix-blend-difference sm:px-5 sm:py-3 sm:text-base font-bold font-SofiaSans max-sm:text-[17px] max-sm:hover:border-b-[1px] border-primary-950 dark:border-primary"
         >
             {children}
         </li>

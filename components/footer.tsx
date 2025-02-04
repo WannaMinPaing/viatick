@@ -12,7 +12,7 @@ interface FooterProps {
 
 const FooterSection = ({ title, links } : FooterProps) => (
   <div className="w-3/12 ml-[100px] max-xl:ml-[10px] max-sm:mt-[20px]">
-    <span className="text-[18px] font-bold dark:text-white text-blue border-b-[1px] border-primary pb-[5px]">{title}</span>
+    <span className="text-[18px] font-bold dark:text-white text-blue border-b-[1px] border-primary pb-[5px]  whitespace-nowrap">{title}</span>
     <div className="mt-[10px]">
       {links.map((link, index) => (
         <div key={index} className={index > 0 ? "mt-[0.35rem]" : ""}>
