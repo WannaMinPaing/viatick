@@ -17,7 +17,7 @@ const WelcomeBlog = () => {
                     Revolutionizing business activities with AIoT
                 </div>
 
-                <div className="text-[35px] max-sm:text-[30px] text-blue mt-[20px] font-bold dark:text-white/80">
+                <div className="text-[35px] max-sm:text-[30px]  mt-[20px] font-bold text-white/80">
                     Unleash Your Full Potential
                     With The <span className="text-gradient">JARVIS</span> Platform
                 </div>
