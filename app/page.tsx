@@ -1,3 +1,4 @@
+import Government from "@/components/home/government";
 import OfferSection from "@/components/home/offerSection";
 import Platform from "@/components/home/platform";
 import RealEstate from "@/components/home/realEstate";
@@ -10,6 +11,7 @@ export default function Home() {
       <div className="background-grid dark:background-grid-dark mx-[100px] max-lg:mx-[50px] max-sm:mx-[15px] h-full">
           <OfferSection />
           <Platform/>
+          <Government />
           <RealEstate />
       </div>
     </>
