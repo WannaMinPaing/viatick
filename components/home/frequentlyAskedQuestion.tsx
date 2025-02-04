@@ -25,7 +25,7 @@ const FrequentlyAskedQuestion = () => {
                         <button onClick={() => toggleFAQ(index)} className="pt-[5px] text-white flex justify-center items-center">
                             <span className="dark:text-white text-blue font-bold font-SofiaSans">{questionAndAnswer.question}</span>
                             <FaChevronDown 
-                                className={`w-[15px] h-[15px] ml-[10px] text-primary transition-transform duration-200 ${openFAQ === index ? "rotate-180" : ""}`} 
+                                className={`w-[15px] h-[15px] ml-[10px] text-primary transition-transform duration-200 ${openFAQ === index ? "rotate-45" : ""}`} 
                             />
                         </button>
 
@@ -35,8 +35,11 @@ const FrequentlyAskedQuestion = () => {
                             transition={{ duration: 1, ease: "easeInOut" }}
                             className="overflow-hidden"
                         >
-                            <div className="">{questionAndAnswer.answer}</div>
+                            <div className="my-[10px] indent-[20px] ml-[5px] inline-block border-l-2 border-b-2 border-primary  p-[30px] ">
+                                {questionAndAnswer.answer}
+                            </div>
                         </motion.div>
+                        
                     </div>
                 ))}
             </div>
