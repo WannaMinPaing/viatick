@@ -25,11 +25,14 @@ export default function DarkModeToggle() {
   };
 
   return (
-    <button
-      onClick={toggleTheme}
-      className="p-2 mr-[20px]  rounded-full border border-gray-300 dark:border-gray-700 dark:bg-gray-800 bg-white text-gray-800 dark:text-white transition"
-    >
-      {theme === "dark" ? <FaMoon size={100} className="w-[20px] h-[20px] max-lg:w-[15px] max-lg:h-[15px]  max-sm:w-[10px] max-sm:h-[10px]" /> : <LuSun size={100} className="w-[20px] h-[20px]  max-lg:w-[15px] max-lg:h-[15px] max-sm:w-[10px] max-sm:h-[10px]"/>}
-    </button>
+    <div className="max-sm:mr-[35px]">
+       <button
+        onClick={toggleTheme}
+        className="p-2 mr-[20px]  rounded-full border border-gray-300 dark:border-gray-700 dark:bg-gray-800 bg-white text-gray-800 dark:text-white transition"
+      >
+        {theme === "dark" ? <FaMoon size={100} className="w-[20px] h-[20px] max-lg:w-[15px] max-lg:h-[15px]  max-sm:w-[10px] max-sm:h-[10px]" /> : <LuSun size={100} className="w-[20px] h-[20px]  max-lg:w-[15px] max-lg:h-[15px] max-sm:w-[10px] max-sm:h-[10px]"/>}
+      </button>
+    </div>
+   
   );
 }

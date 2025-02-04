@@ -6,7 +6,7 @@ const RealEstate = () => {
             <div className="mt-[50px] w-full max-w-full  px-[15px] lg:!order-2 lg:w-7/12 lg:px-[20px] xl:!order-2 xl:w-7/12 xl:px-[35px]">
                 <div className="mx-[-15px] mt-[-25px] flex flex-wrap md:mx-[-12.5px] lg:mx-[-12.5px] xl:mx-[-12.5px]">
                     
-                    <div className="mt-[25px] w-full max-w-full  !self-end px-[15px] md:!ml-[8.33333333%] md:w-5/12 md:px-[12.5px] lg:!ml-[8.33333333%] lg:w-5/12 lg:px-[12.5px] xl:!ml-[8.33333333%] xl:w-5/12 xl:px-[12.5px]" >
+                    <div className="mt-[25px] w-full  max-w-full  !self-end px-[15px] md:!ml-[8.33333333%] md:w-5/12 md:px-[12.5px] lg:!ml-[8.33333333%] lg:w-5/12 lg:px-[12.5px] xl:!ml-[8.33333333%] xl:w-5/12 xl:px-[12.5px]" >
                         <Image
                             alt="Viatick"
                             src="/images/real_estate1.png"
