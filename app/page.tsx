@@ -1,5 +1,6 @@
 import FrequentlyAskedQuestion from "@/components/home/frequentlyAskedQuestion";
 import Government from "@/components/home/government";
+import Journey from "@/components/home/journey";
 import OfferSection from "@/components/home/offerSection";
 import Partners from "@/components/home/partners";
 import Platform from "@/components/home/platform";
@@ -18,6 +19,8 @@ export default function Home() {
           <FrequentlyAskedQuestion/>
           <Partners />
       </div>
+      <Journey />
+     
     </>
   );
 }
