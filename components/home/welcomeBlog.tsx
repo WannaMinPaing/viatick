@@ -12,7 +12,7 @@ const WelcomeBlog = () => {
                 <source src="/videos/welcome.mp4" type="video/mp4" />
             </video>
 
-            <div className="absolute top-0 w-full z-10">
+            <div className="absolute top-0 w-full z-5">
                 <div className="pt-[150px] max-sm:pt-[50px] font-bold text-[20px] text-gradient font-SofiaSans">
                     Revolutionizing business activities with AIoT
                 </div>

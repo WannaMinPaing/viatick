@@ -35,7 +35,7 @@ const FrequentlyAskedQuestion = () => {
                             transition={{ duration: 1, ease: "easeInOut" }}
                             className="overflow-hidden"
                         >
-                            <div className="my-[10px] indent-[20px] ml-[5px] inline-block border-l-2 border-b-2 border-primary  p-[30px] ">
+                            <div className="my-[10px] indent-[20px] ml-[5px] inline-block border-l-2 border-b-2 border-primary  p-[30px] dark:text-white text-blue">
                                 {questionAndAnswer.answer}
                             </div>
                         </motion.div>
@@ -48,7 +48,7 @@ const FrequentlyAskedQuestion = () => {
                 <div className="mb-5 text-[calc(1rem_+_0.66vw)] font-bold !leading-[1.3] text-primary-500 dark:text-white-200 lg:mb-9 xl:text-[1.5rem]">
                     <TypingEffect />
                 </div>
-                <div className="text-[18px]">
+                <div className="text-[18px] dark:text-white text-blue">
                     VIATICK Pte. Ltd. is an aIoT company that specializes in Artificial Intelligence through IoT. Our vision is to enable companies to use their own data to perform decisions that can make them more money, save more money, or discover insights that do both.
                 </div>
             </div>

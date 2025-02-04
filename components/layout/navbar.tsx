@@ -6,7 +6,7 @@ import DarkModeToggle from "../DarkModeToggle";
 
 const Navbar = () =>{
     return (  
-        <div className="flex flex-col lg:flex-row justify-between items-center bg-secondary dark:bg-dark py-[14px] mb-[10px] mx-[20px]  max-lg:mx-[5px] sm:mx-[80px] border-[1px] max-lg:border-[0px] border-primary/90 mt-[20px] rounded-[10px]">         
+        <div className="sticky top-5 z-10 max-sm:top-0 flex flex-col lg:flex-row justify-between items-center bg-secondary dark:bg-dark py-[14px] mb-[10px] mx-[20px]  max-lg:mx-[5px] sm:mx-[80px] border-[1px] max-lg:border-[0px] border-primary/90 mt-[20px] rounded-[10px]">         
             
             <div className="flex justify-between items-center  max-lg:w-full">              
                 <div></div>
