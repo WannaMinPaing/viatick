@@ -4,6 +4,7 @@ import { BiCustomize } from "react-icons/bi";
 import { MdOnlinePrediction } from "react-icons/md";
 import { MdOutlineSensorOccupied } from "react-icons/md";
 import { FaComputer } from "react-icons/fa6";
+import { JSX } from "react";
 
 interface OfferingProps {
   icon: JSX.Element;

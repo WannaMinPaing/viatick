@@ -1,4 +1,3 @@
-import Footer from "@/components/footer";
 import FrequentlyAskedQuestion from "@/components/home/frequentlyAskedQuestion";
 import Government from "@/components/home/government";
 import Journey from "@/components/home/journey";
